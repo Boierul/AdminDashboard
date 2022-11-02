@@ -1,0 +1,12 @@
+.square {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 1rem;
+    margin: 10px;
+}
+
+.square_text {
+    margin: auto;
+    color: white;
+}
