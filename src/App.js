@@ -1,12 +1,24 @@
-import Square from "./components/Square/Square";
+import Square from "./components/square/Square";
 import {ColorModeContext, useMode} from "./themes";
 import {CssBaseline, ThemeProvider} from "@mui/material";
+
+import {Routes, Route} from "react-router-dom";
+import Dashboard from "./segments/dashboard/Dashboard";
+import Team from "./segments/team/Team";
+import Invoices from "./segments/invoices/Invoices";
+import Contacts from "./segments/contacts/Contacts";
+import Bar from "./segments/bar/Bar";
+import Form from "./segments/form/Form";
+import Line from "./segments/line/Line";
+import Pie from "./segments/pie/Pie";
+import FAQ from "./segments/faq/Faq";
+import Geography from "./segments/geography/Geography";
+import Calendar from "./segments/calendar/Calendar";
 
 import './App.css';
 import Topbar from "./segments/global/Topbar";
 
 function App() {
-
     const [theme, colorMode] = useMode();
 
     return (
@@ -16,7 +28,23 @@ function App() {
                 <CssBaseline/>
                 <div className="App">
                     <main className={"content"}>
-                        <Topbar />
+
+                        <Topbar/>
+
+                        <Routes>
+                            <Route path="/" element={<Dashboard/>}/>
+                            <Route path="/team" element={<Team/>}/>
+                            <Route path="/contacts" element={<Contacts/>}/>
+                            <Route path="/invoices" element={<Invoices/>}/>
+                            <Route path="/form" element={<Form/>}/>
+                            <Route path="/bar" element={<Bar/>}/>
+                            <Route path="/pie" element={<Pie/>}/>
+                            <Route path="/line" element={<Line/>}/>
+                            <Route path="/faq" element={<FAQ/>}/>
+                            <Route path="/calendar" element={<Calendar/>}/>
+                            <Route path="/geography" element={<Geography/>}/>
+                        </Routes>
+
                     </main>
                 </div>
             </ThemeProvider>
@@ -28,14 +56,14 @@ function App() {
 export function generateSquares() {
     return (
         <>
-            <Square insideText={"Square 1"} color={"red"}/>
-            <Square insideText={"Square 2"} color={"blue"}/>
-            <Square insideText={"Square 3"} color={"teal"}/>
-            <Square insideText={"Square 4"} color={"pink"}/>
-            <Square insideText={"Square 5"} color={"darkviolet"}/>
-            <Square insideText={"Square 6"} color={"gold"}/>
-            <Square insideText={"Square 7"} color={"silver"}/>
-            <Square insideText={"Square 8"} color={"darkorange"}/>
+            <Square insideText={"square 1"} color={"red"}/>
+            <Square insideText={"square 2"} color={"blue"}/>
+            <Square insideText={"square 3"} color={"teal"}/>
+            <Square insideText={"square 4"} color={"pink"}/>
+            <Square insideText={"square 5"} color={"darkviolet"}/>
+            <Square insideText={"square 6"} color={"gold"}/>
+            <Square insideText={"square 7"} color={"silver"}/>
+            <Square insideText={"square 8"} color={"darkorange"}/>
         </>
     )
 }
