@@ -60,6 +60,11 @@ export const tokens = (mode) => ({
                 800: "#2a2d64",
                 900: "#151632"
             },
+            accessColors: {
+                admin: "#CF3E28",
+                manager: "#5D6FDB",
+                user: "#338300"
+            }
         } : {
             gray: {
                 100: "#141414",
@@ -116,6 +121,11 @@ export const tokens = (mode) => ({
                 800: "#c3c6fd",
                 900: "#e1e2fe",
             },
+            accessColors: {
+                admin: "#d36f56",
+                manager: "#A8A7DE",
+                user: "#6DB937"
+            }
         }),
 });
 
