@@ -20,7 +20,7 @@ export const tokens = (mode) => ({
                 100: "#d0d1d5",
                 200: "#a1a4ab",
                 300: "#727681",
-                400: "#434957",
+                400: "#1F2A40",
                 500: "#141b2d",
                 600: "#101624",
                 700: "#0c101b",
@@ -77,6 +77,7 @@ export const tokens = (mode) => ({
                 200: "#080b12",
                 300: "#0c101b",
                 500: "#141b2d",
+                400: "#f2f0f0",
                 600: "#1F2A40",
                 700: "#727681",
                 800: "#a1a4ab",
@@ -118,7 +119,7 @@ export const tokens = (mode) => ({
         }),
 });
 
-/* Configuration of the MUI theme settings */
+/* Configuration of the MUI themes settings */
 export const themeSettings = (mode) => {
     const colors = tokens(mode);
 

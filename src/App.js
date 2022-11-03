@@ -1,5 +1,5 @@
 import Square from "./components/square/Square";
-import {ColorModeContext, useMode} from "./theme/themes";
+import {ColorModeContext, useMode} from "./themes/themes";
 import {CssBaseline, ThemeProvider} from "@mui/material";
 
 import {Routes, Route} from "react-router-dom";

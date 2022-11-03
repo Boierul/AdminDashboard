@@ -3,7 +3,7 @@ import {ProSidebar, Menu, MenuItem} from "react-pro-sidebar";
 import 'react-pro-sidebar/dist/css/styles.css';
 import {Box, IconButton, Typography, useTheme} from "@mui/material";
 import {Link} from "react-router-dom";
-import {tokens} from "../../theme/themes";
+import {tokens} from "../../themes/themes";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
@@ -46,7 +46,7 @@ const Sidebar = () => {
         <Box
             sx={{
                 "& .pro-sidebar-inner": {
-                    background: `${colors.primary["400"]} !important`,
+                    background: `${colors.primary["400"]} `,
                 },
                 "& .pro-icon-wrapper": {
                     backgroundColor: "transparent !important",
@@ -62,9 +62,10 @@ const Sidebar = () => {
                 },
             }}
         >
-            <ProSidebar collapsed={isCollapsed} >
+            {/* Implementation of the sidebar lib */}
+            <ProSidebar collapsed={isCollapsed}>
                 <Menu iconShape="circle">
-                    {/* LOGO AND MENU ICON */}
+                    {/*  */}
                     <MenuItem
                         onClick={() => setIsCollapsed(!isCollapsed)}
                         icon={isCollapsed ? <MenuOutlinedIcon/> : undefined}
@@ -88,7 +89,7 @@ const Sidebar = () => {
                         )}
                     </MenuItem>
 
-                    {/* Show user info when Sidebar button is clicked */}
+                    {/* Show user info when Sidebar button is clicked via conditional rendering */}
                     {!isCollapsed && (
                         <Box mb="25px">
                             <Box display="flex" justifyContent="center" alignItems="center">
@@ -116,6 +117,7 @@ const Sidebar = () => {
                         </Box>
                     )}
 
+                    {/* Menu items/routes  */}
                     <Box paddingLeft={isCollapsed ? undefined : "10%"}>
                         <Item
                             title="Dashboard"
@@ -127,7 +129,8 @@ const Sidebar = () => {
 
                         <Typography
                             variant="h6"
-                            color={colors.gray["300"]}
+                            pl={"5px"}
+                            color={colors.greenAccent["400"]}
                             sx={{m: "15px 0 5px 20px"}}
                         >
                             Data
@@ -154,9 +157,11 @@ const Sidebar = () => {
                             setSelected={setSelected}
                         />
 
+                        <br/>
+
                         <Typography
                             variant="h6"
-                            color={colors.gray["300"]}
+                            color={colors.greenAccent["400"]}
                             sx={{m: "15px 0 5px 20px"}}
                         >
                             Pages
@@ -183,9 +188,11 @@ const Sidebar = () => {
                             setSelected={setSelected}
                         />
 
+                        <br/>
+
                         <Typography
                             variant="h6"
-                            color={colors.gray["300"]}
+                            color={colors.greenAccent["400"]}
                             sx={{m: "15px 0 5px 20px"}}
                         >
                             Charts
