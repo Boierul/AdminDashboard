@@ -9,9 +9,9 @@ function Dashboard(props) {
     const colors = tokens(theme.palette.mode);
 
     return (
-        <div>
-            <Header title={"DASHBOARD"} subtitle={"This is your dashboard"}/>
-        </div>
+        <Box m="30px">
+            <Header title={"DASHBOARD"} subtitle={"Welcome text for your dashboard"}/>
+        </Box>
     );
 }
 

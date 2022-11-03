@@ -13,6 +13,7 @@ function Team() {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
 
+    /* Attribute accessLevel is creating a new component */
     const columns = [
         {
             field: "id",
@@ -116,7 +117,7 @@ function Team() {
                     },
                     "& .MuiCheckbox-root": {
                         color: `${colors.greenAccent["200"]} !important`,
-                    },
+                    }
                 }}
             >
                 <DataGrid checkboxSelection columns={columns} rows={mockDataTeam}/>
