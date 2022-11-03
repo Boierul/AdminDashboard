@@ -1,5 +1,5 @@
 import Square from "./components/square/Square";
-import {ColorModeContext, useMode} from "./themes";
+import {ColorModeContext, useMode} from "./theme/themes";
 import {CssBaseline, ThemeProvider} from "@mui/material";
 
 import {Routes, Route} from "react-router-dom";
@@ -17,20 +17,21 @@ import Calendar from "./segments/calendar/Calendar";
 
 import './App.css';
 import Topbar from "./segments/global/Topbar";
+import {useState} from "react";
+import Sidebar from "./segments/global/Sidebar";
 
 function App() {
     const [theme, colorMode] = useMode();
+    const [isSidebar, setIsSidebar] = useState(true);
 
     return (
-
         <ColorModeContext.Provider value={colorMode}>
             <ThemeProvider theme={theme}>
                 <CssBaseline/>
-                <div className="App">
+                <div className="app">
+                    <Sidebar isSidebar={isSidebar}/>
                     <main className={"content"}>
-
-                        <Topbar/>
-
+                        <Topbar setIsSidebar={setIsSidebar}/>
                         <Routes>
                             <Route path="/" element={<Dashboard/>}/>
                             <Route path="/team" element={<Team/>}/>
@@ -44,7 +45,6 @@ function App() {
                             <Route path="/calendar" element={<Calendar/>}/>
                             <Route path="/geography" element={<Geography/>}/>
                         </Routes>
-
                     </main>
                 </div>
             </ThemeProvider>
