@@ -37,12 +37,22 @@ function Form() {
                   }) => (
                     <form onSubmit={handleSubmit}>
                         <Box
-                            display="grid"
+                            display="flex"
+                            flexWrap="wrap"
+                            flexDirection="column"
+                            alignItems="center"
+                            justifyContent="center"
                             gap="25px"
-                            gridTemplateColumns="repeat(4, minmax(0, 1fr))"
+                            p="15px"
                             sx={{
-                                "& > div": {gridColumn: isNonMobile ? undefined : "span 4"},
                                 "& .MuiFormLabel-filled": {
+                                    color: colors.greenAccent["500"]
+                                },
+                                "& .MuiFormControl-root": {
+                                    color: colors.greenAccent["500"],
+                                    width: "450px"
+                                },
+                                "& .MuiOutlinedInput-filled": {
                                     color: colors.greenAccent["500"]
                                 },
                                 "& .MuiOutlinedInput-notchedOutline": {
@@ -68,10 +78,8 @@ function Form() {
                                         borderColor: colors.greenAccent["700"],
                                     },
                                 },
-
                             }}
                         >
-
 
                             <TextField
                                 variant="outlined"
@@ -151,8 +159,8 @@ function Form() {
                                 sx={{gridColumn: "span 4"}}
                             />
                         </Box>
-                        <Box display="flex" justifyContent="end" mt="25px" justifyContent="center">
-                            <Button type="submit" color="secondary" variant="contained" size="large" sx={{width: "300px", marginTop: "3rem"}}>
+                        <Box display="flex" justifyContent="end" mt="20px" pb="3rem" justifyContent="center">
+                            <Button type="submit" color="secondary" variant="contained" size="large" sx={{width: "300px", marginTop: "1rem"}}>
                                 Create New User
                             </Button>
                         </Box>
