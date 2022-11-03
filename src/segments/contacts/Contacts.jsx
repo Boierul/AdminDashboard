@@ -74,7 +74,7 @@ function Contacts() {
     ];
 
     return (
-        <Box m={"30px"}>
+        <Box className={"boxxx"} m={"30px"}>
             <Header title={"CONTACTS"} subtitle={"Contacts list"}/>
             <Box
                 m="40px 0 0 0"
@@ -96,6 +96,7 @@ function Contacts() {
                     },
                     "& .MuiDataGrid-virtualScroller": {
                         backgroundColor: colors.primary["400"],
+                        colors: colors.greenAccent["600"]
                     },
                     "& .MuiDataGrid-footerContainer": {
                         borderTop: "none",
