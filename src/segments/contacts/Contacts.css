@@ -1,0 +1,10 @@
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #70d8bd;
+    border-radius: 0.1em;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #3da58a;
+}

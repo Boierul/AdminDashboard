@@ -4,7 +4,7 @@ import {tokens} from "../../themes/themes"
 import {mockDataTeam} from "../../data/mockData";
 
 import {DataGrid} from "@mui/x-data-grid";
-import {Typography, Box, useTheme} from "@mui/material";
+import {Box, Typography, useTheme} from "@mui/material";
 import AdminPanelSettingsOutlinedIcon from "@mui/icons-material/AdminPanelSettingsOutlined";
 import LockOpenOutlinedIcon from "@mui/icons-material/LockOpenOutlined";
 import SecurityOutlinedIcon from "@mui/icons-material/SecurityOutlined";
@@ -13,7 +13,7 @@ function Team() {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
 
-    /* Attribute accessLevel is creating a new component */
+    /* Attribute accessLevel is creating a dynamically rendered component */
     const columns = [
         {
             field: "id",
@@ -85,9 +85,6 @@ function Team() {
         },
     ];
 
-    console.log(mockDataTeam)
-    console.log(columns)
-
     return (
         <Box m="30px">
             <Header title={"TEAM"} subtitle={"Managing the Team Members"}/>
@@ -102,11 +99,12 @@ function Team() {
                         borderBottom: "none",
                     },
                     "& .name-column--cell": {
-                        color: colors.greenAccent["300"],
+                        color: colors.blueAccent["300"],
                     },
                     "& .MuiDataGrid-columnHeaders": {
                         backgroundColor: colors.blueAccent["700"],
                         borderBottom: "none",
+                        borderRadius: "0.2em"
                     },
                     "& .MuiDataGrid-virtualScroller": {
                         backgroundColor: colors.primary["400"],
@@ -114,13 +112,14 @@ function Team() {
                     "& .MuiDataGrid-footerContainer": {
                         borderTop: "none",
                         backgroundColor: colors.blueAccent["700"],
+                        borderRadius: "0.2em"
                     },
                     "& .MuiCheckbox-root": {
-                        color: `${colors.greenAccent["200"]} !important`,
+                        color: `${colors.blueAccent["200"]} !important`,
                     }
                 }}
             >
-                <DataGrid checkboxSelection columns={columns} rows={mockDataTeam}/>
+                <DataGrid checkboxSelection columns={columns} rows={mockDataTeam} />
             </Box>
         </Box>
     );
