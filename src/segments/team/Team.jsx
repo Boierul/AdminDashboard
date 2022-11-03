@@ -87,7 +87,7 @@ function Team() {
 
     return (
         <Box m="30px">
-            <Header title={"TEAM"} subtitle={"Managing the Team Members"}/>
+            <Header title={"TEAM"} subtitle={"Managing the Team Members"} color={colors.blueAccent["400"]}/>
             <Box
                 m="40px 0 0 0"
                 height="70vh"

@@ -2,7 +2,6 @@ import React from 'react';
 import {Box, useTheme} from "@mui/material";
 import {DataGrid, GridToolbar} from "@mui/x-data-grid";
 
-import './Contacts.css'
 import {tokens} from "../../themes/themes";
 import {mockDataContacts} from "../../data/mockData";
 import Header from "../../components/shared/Header";
@@ -15,11 +14,15 @@ function Contacts() {
         {
             field: "id",
             headerName: "ID",
-            flex: 0.5
+            flex: 0.5,
+            headerAlign: 'center',
+            align: "center"
         },
         {
             field: "registrarId",
-            headerName: "Registrar ID"
+            headerName: "Registrar ID",
+            headerAlign: 'center',
+            align: "center"
         },
         {
             field: "name",
@@ -75,7 +78,7 @@ function Contacts() {
 
     return (
         <Box className={"boxxx"} m={"30px"}>
-            <Header title={"CONTACTS"} subtitle={"Contacts list"}/>
+            <Header title={"CONTACTS"} subtitle={"All the contacts available"} color={colors.greenAccent["400"]}/>
             <Box
                 m="40px 0 0 0"
                 height="70vh"

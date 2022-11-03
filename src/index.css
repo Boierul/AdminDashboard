@@ -34,14 +34,3 @@ body,
 ::-webkit-scrollbar-thumb:hover {
   background: #3da58a;
 }
-
-/*!* Handle *!*/
-/*::-webkit-scrollbar-thumb {*/
-/*  background: #535ac8;*/
-/*  border-radius: 0.1em;*/
-/*}*/
-
-/*!* Handle on hover *!*/
-/*::-webkit-scrollbar-thumb:hover {*/
-/*  background: #3e4396;*/
-/*}*/

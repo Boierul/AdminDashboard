@@ -2,7 +2,7 @@ import React from 'react';
 import {Typography, Box, useTheme} from "@mui/material";
 import {tokens} from "../../themes/themes";
 
-function Header({title, subtitle}) {
+function Header({title, subtitle, color}) {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
 
@@ -16,7 +16,7 @@ function Header({title, subtitle}) {
             >
                 {title}
             </Typography>
-            <Typography variant="h5" color={colors.greenAccent["400"]}>
+            <Typography variant="h5" color={color}>
                 {subtitle}
             </Typography>
         </Box>
