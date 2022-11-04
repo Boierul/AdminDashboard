@@ -157,8 +157,7 @@ function Dashboard() {
                                 Revenue Generated
                             </Typography>
                             <Typography
-                                marginBottom="20px"
-
+                                marginBottom="30px"
                                 variant="h3"
                                 fontWeight="bold"
                                 color={colors.greenAccent[500]}
@@ -275,7 +274,7 @@ function Dashboard() {
                     >
                         Sales Quantity
                     </Typography>
-                    <Box height="80%" width="470px" paddingRight="25px">
+                    <Box height="85%" position="relative">
                         <BarChart isDashboard={true}/>
                     </Box>
                 </Box>
@@ -293,7 +292,7 @@ function Dashboard() {
                     >
                         Geography Based Traffic
                     </Typography>
-                    <Box height="27.5vh" width="26vw">
+                    <Box height="27.5vh" width="27.5vw" position="relative" marginRight="30px" paddingRight="30px">
                         <GeographyChart isDashboard={true}/>
                     </Box>
                 </Box>

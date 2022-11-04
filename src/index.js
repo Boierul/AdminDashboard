@@ -18,3 +18,8 @@ root.render(
 // TODO Get rid of unexpected resize
 // TODO Connect real API to the template
 // TODO Add auth capabilities
+// TODO Add search functionality
+// TODO Add notification functionality
+// TODO Add settings functionality
+// TODO Implement download report
+// TODO Dashboard -> Sales Quantity resize because of the Sidebar
