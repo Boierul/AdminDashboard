@@ -1,8 +1,8 @@
 import React from 'react';
 import {useTheme} from "@mui/material";
 import {ResponsiveBar} from "@nivo/bar";
-import {tokens} from "../themes/themes";
-import {mockBarData as data} from "../data/mockData";
+import {tokens} from "../../themes/themes";
+import {mockBarData as data} from "../../data/mockData";
 
 function BarChart({isDashboard = false}) {
     const theme = useTheme();
@@ -101,6 +101,7 @@ function BarChart({isDashboard = false}) {
                 from: "color",
                 modifiers: [["darker", 1.6]],
             }}
+            motionConfig="slow"
             legends={[
                 {
                     dataFrom: "keys",
@@ -125,7 +126,6 @@ function BarChart({isDashboard = false}) {
                     ],
                 },
             ]}
-            motionConfig="wobbly"
             role="application"
             barAriaLabel={function (e) {
                 return e.id + ": " + e.formattedValue + " in country: " + e.indexValue;

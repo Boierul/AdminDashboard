@@ -319,279 +319,415 @@ export const mockTransactions = [
 
 export const mockBarData = [
     {
-        country: "AD",
-        "hot dog": 137,
-        "hot dogColor": "hsl(229, 70%, 50%)",
-        burger: 96,
-        burgerColor: "hsl(296, 70%, 50%)",
-        kebab: 72,
-        kebabColor: "hsl(97, 70%, 50%)",
-        donut: 140,
-        donutColor: "hsl(340, 70%, 50%)",
+        "country": "AD",
+        "hot dog": 50,
+        "hot dogColor": "hsl(343, 70%, 50%)",
+        "burger": 27,
+        "burgerColor": "hsl(202, 70%, 50%)",
+        "sandwich": 146,
+        "sandwichColor": "hsl(157, 70%, 50%)",
+        "kebab": 113,
+        "kebabColor": "hsl(324, 70%, 50%)",
+        "fries": 90,
+        "friesColor": "hsl(280, 70%, 50%)",
+        "donut": 40,
+        "donutColor": "hsl(281, 70%, 50%)"
     },
     {
-        country: "AE",
-        "hot dog": 55,
+        "country": "AE",
+        "hot dog": 150,
+        "hot dogColor": "hsl(156, 70%, 50%)",
+        "burger": 27,
+        "burgerColor": "hsl(356, 70%, 50%)",
+        "sandwich": 32,
+        "sandwichColor": "hsl(35, 70%, 50%)",
+        "kebab": 199,
+        "kebabColor": "hsl(229, 70%, 50%)",
+        "fries": 56,
+        "friesColor": "hsl(39, 70%, 50%)",
+        "donut": 105,
+        "donutColor": "hsl(266, 70%, 50%)"
+    },
+    {
+        "country": "AF",
+        "hot dog": 0,
+        "hot dogColor": "hsl(211, 70%, 50%)",
+        "burger": 181,
+        "burgerColor": "hsl(193, 70%, 50%)",
+        "sandwich": 114,
+        "sandwichColor": "hsl(299, 70%, 50%)",
+        "kebab": 94,
+        "kebabColor": "hsl(113, 70%, 50%)",
+        "fries": 58,
+        "friesColor": "hsl(150, 70%, 50%)",
+        "donut": 140,
+        "donutColor": "hsl(308, 70%, 50%)"
+    },
+    {
+        "country": "AG",
+        "hot dog": 42,
         "hot dogColor": "hsl(307, 70%, 50%)",
-        burger: 28,
-        burgerColor: "hsl(111, 70%, 50%)",
-        kebab: 58,
-        kebabColor: "hsl(273, 70%, 50%)",
-        donut: 29,
-        donutColor: "hsl(275, 70%, 50%)",
+        "burger": 100,
+        "burgerColor": "hsl(70, 70%, 50%)",
+        "sandwich": 159,
+        "sandwichColor": "hsl(94, 70%, 50%)",
+        "kebab": 104,
+        "kebabColor": "hsl(308, 70%, 50%)",
+        "fries": 26,
+        "friesColor": "hsl(271, 70%, 50%)",
+        "donut": 44,
+        "donutColor": "hsl(338, 70%, 50%)"
     },
     {
-        country: "AF",
-        "hot dog": 109,
-        "hot dogColor": "hsl(72, 70%, 50%)",
-        burger: 23,
-        burgerColor: "hsl(96, 70%, 50%)",
-        kebab: 34,
-        kebabColor: "hsl(106, 70%, 50%)",
-        donut: 152,
-        donutColor: "hsl(256, 70%, 50%)",
+        "country": "AI",
+        "hot dog": 68,
+        "hot dogColor": "hsl(102, 70%, 50%)",
+        "burger": 99,
+        "burgerColor": "hsl(60, 70%, 50%)",
+        "sandwich": 119,
+        "sandwichColor": "hsl(306, 70%, 50%)",
+        "kebab": 187,
+        "kebabColor": "hsl(191, 70%, 50%)",
+        "fries": 174,
+        "friesColor": "hsl(88, 70%, 50%)",
+        "donut": 198,
+        "donutColor": "hsl(105, 70%, 50%)"
     },
     {
-        country: "AG",
-        "hot dog": 133,
-        "hot dogColor": "hsl(257, 70%, 50%)",
-        burger: 52,
-        burgerColor: "hsl(326, 70%, 50%)",
-        kebab: 43,
-        kebabColor: "hsl(110, 70%, 50%)",
-        donut: 83,
-        donutColor: "hsl(9, 70%, 50%)",
+        "country": "AL",
+        "hot dog": 129,
+        "hot dogColor": "hsl(304, 70%, 50%)",
+        "burger": 146,
+        "burgerColor": "hsl(24, 70%, 50%)",
+        "sandwich": 30,
+        "sandwichColor": "hsl(203, 70%, 50%)",
+        "kebab": 46,
+        "kebabColor": "hsl(69, 70%, 50%)",
+        "fries": 109,
+        "friesColor": "hsl(196, 70%, 50%)",
+        "donut": 178,
+        "donutColor": "hsl(34, 70%, 50%)"
     },
     {
-        country: "AI",
-        "hot dog": 81,
-        "hot dogColor": "hsl(190, 70%, 50%)",
-        burger: 80,
-        burgerColor: "hsl(325, 70%, 50%)",
-        kebab: 112,
-        kebabColor: "hsl(54, 70%, 50%)",
-        donut: 35,
-        donutColor: "hsl(285, 70%, 50%)",
-    },
-    {
-        country: "AL",
-        "hot dog": 66,
-        "hot dogColor": "hsl(208, 70%, 50%)",
-        burger: 111,
-        burgerColor: "hsl(334, 70%, 50%)",
-        kebab: 167,
-        kebabColor: "hsl(182, 70%, 50%)",
-        donut: 18,
-        donutColor: "hsl(76, 70%, 50%)",
-    },
-    {
-        country: "AM",
-        "hot dog": 80,
-        "hot dogColor": "hsl(87, 70%, 50%)",
-        burger: 47,
-        burgerColor: "hsl(141, 70%, 50%)",
-        kebab: 158,
-        kebabColor: "hsl(224, 70%, 50%)",
-        donut: 49,
-        donutColor: "hsl(274, 70%, 50%)",
-    },
+        "country": "AM",
+        "hot dog": 114,
+        "hot dogColor": "hsl(151, 70%, 50%)",
+        "burger": 8,
+        "burgerColor": "hsl(98, 70%, 50%)",
+        "sandwich": 37,
+        "sandwichColor": "hsl(86, 70%, 50%)",
+        "kebab": 147,
+        "kebabColor": "hsl(57, 70%, 50%)",
+        "fries": 194,
+        "friesColor": "hsl(171, 70%, 50%)",
+        "donut": 127,
+        "donutColor": "hsl(137, 70%, 50%)"
+    }
 ];
 
 export const mockPieData = [
     {
-        id: "hack",
-        label: "hack",
-        value: 239,
-        color: "hsl(104, 70%, 50%)",
+        "id": "javascript",
+        "label": "javascript",
+        "value": 205,
+        "color": "hsl(339, 70%, 50%)"
     },
     {
-        id: "make",
-        label: "make",
-        value: 170,
-        color: "hsl(162, 70%, 50%)",
+        "id": "java",
+        "label": "java",
+        "value": 324,
+        "color": "hsl(61, 70%, 50%)"
     },
     {
-        id: "go",
-        label: "go",
-        value: 322,
-        color: "hsl(291, 70%, 50%)",
+        "id": "go",
+        "label": "go",
+        "value": 509,
+        "color": "hsl(50, 70%, 50%)"
     },
     {
-        id: "lisp",
-        label: "lisp",
-        value: 503,
-        color: "hsl(229, 70%, 50%)",
+        "id": "erlang",
+        "label": "erlang",
+        "value": 209,
+        "color": "hsl(295, 70%, 50%)"
     },
     {
-        id: "scala",
-        label: "scala",
-        value: 584,
-        color: "hsl(344, 70%, 50%)",
-    },
+        "id": "scala",
+        "label": "scala",
+        "value": 575,
+        "color": "hsl(49, 70%, 50%)"
+    }
 ];
 
 export const mockLineData = [
     {
-        id: "japan",
-        color: tokens("dark").greenAccent[500],
-        data: [
+        "id": "japan",
+        "color": "hsl(325, 70%, 50%)",
+        "data": [
             {
-                x: "plane",
-                y: 101,
+                "x": "plane",
+                "y": 286
             },
             {
-                x: "helicopter",
-                y: 75,
+                "x": "helicopter",
+                "y": 5
             },
             {
-                x: "boat",
-                y: 36,
+                "x": "boat",
+                "y": 291
             },
             {
-                x: "train",
-                y: 216,
+                "x": "train",
+                "y": 139
             },
             {
-                x: "subway",
-                y: 35,
+                "x": "subway",
+                "y": 264
             },
             {
-                x: "bus",
-                y: 236,
+                "x": "bus",
+                "y": 133
             },
             {
-                x: "car",
-                y: 88,
+                "x": "car",
+                "y": 231
             },
             {
-                x: "moto",
-                y: 232,
+                "x": "moto",
+                "y": 201
             },
             {
-                x: "bicycle",
-                y: 281,
+                "x": "bicycle",
+                "y": 72
             },
             {
-                x: "horse",
-                y: 1,
+                "x": "horse",
+                "y": 15
             },
             {
-                x: "skateboard",
-                y: 35,
+                "x": "skateboard",
+                "y": 291
             },
             {
-                x: "others",
-                y: 14,
-            },
-        ],
+                "x": "others",
+                "y": 253
+            }
+        ]
     },
     {
-        id: "france",
-        color: tokens("dark").blueAccent[300],
-        data: [
+        "id": "france",
+        "color": "hsl(28, 70%, 50%)",
+        "data": [
             {
-                x: "plane",
-                y: 212,
+                "x": "plane",
+                "y": 233
             },
             {
-                x: "helicopter",
-                y: 190,
+                "x": "helicopter",
+                "y": 274
             },
             {
-                x: "boat",
-                y: 270,
+                "x": "boat",
+                "y": 36
             },
             {
-                x: "train",
-                y: 9,
+                "x": "train",
+                "y": 288
             },
             {
-                x: "subway",
-                y: 75,
+                "x": "subway",
+                "y": 111
             },
             {
-                x: "bus",
-                y: 175,
+                "x": "bus",
+                "y": 250
             },
             {
-                x: "car",
-                y: 33,
+                "x": "car",
+                "y": 249
             },
             {
-                x: "moto",
-                y: 189,
+                "x": "moto",
+                "y": 44
             },
             {
-                x: "bicycle",
-                y: 97,
+                "x": "bicycle",
+                "y": 122
             },
             {
-                x: "horse",
-                y: 87,
+                "x": "horse",
+                "y": 279
             },
             {
-                x: "skateboard",
-                y: 299,
+                "x": "skateboard",
+                "y": 109
             },
             {
-                x: "others",
-                y: 251,
-            },
-        ],
+                "x": "others",
+                "y": 35
+            }
+        ]
     },
     {
-        id: "us",
-        color: tokens("dark").redAccent[200],
-        data: [
+        "id": "us",
+        "color": "hsl(292, 70%, 50%)",
+        "data": [
             {
-                x: "plane",
-                y: 191,
+                "x": "plane",
+                "y": 216
             },
             {
-                x: "helicopter",
-                y: 136,
+                "x": "helicopter",
+                "y": 71
             },
             {
-                x: "boat",
-                y: 91,
+                "x": "boat",
+                "y": 93
             },
             {
-                x: "train",
-                y: 190,
+                "x": "train",
+                "y": 85
             },
             {
-                x: "subway",
-                y: 211,
+                "x": "subway",
+                "y": 176
             },
             {
-                x: "bus",
-                y: 152,
+                "x": "bus",
+                "y": 295
             },
             {
-                x: "car",
-                y: 189,
+                "x": "car",
+                "y": 99
             },
             {
-                x: "moto",
-                y: 152,
+                "x": "moto",
+                "y": 52
             },
             {
-                x: "bicycle",
-                y: 8,
+                "x": "bicycle",
+                "y": 184
             },
             {
-                x: "horse",
-                y: 197,
+                "x": "horse",
+                "y": 174
             },
             {
-                x: "skateboard",
-                y: 107,
+                "x": "skateboard",
+                "y": 241
             },
             {
-                x: "others",
-                y: 170,
+                "x": "others",
+                "y": 77
+            }
+        ]
+    },
+    {
+        "id": "germany",
+        "color": "hsl(82, 70%, 50%)",
+        "data": [
+            {
+                "x": "plane",
+                "y": 182
             },
-        ],
+            {
+                "x": "helicopter",
+                "y": 285
+            },
+            {
+                "x": "boat",
+                "y": 82
+            },
+            {
+                "x": "train",
+                "y": 10
+            },
+            {
+                "x": "subway",
+                "y": 124
+            },
+            {
+                "x": "bus",
+                "y": 3
+            },
+            {
+                "x": "car",
+                "y": 270
+            },
+            {
+                "x": "moto",
+                "y": 59
+            },
+            {
+                "x": "bicycle",
+                "y": 265
+            },
+            {
+                "x": "horse",
+                "y": 222
+            },
+            {
+                "x": "skateboard",
+                "y": 26
+            },
+            {
+                "x": "others",
+                "y": 171
+            }
+        ]
+    },
+    {
+        "id": "norway",
+        "color": "hsl(19, 70%, 50%)",
+        "data": [
+            {
+                "x": "plane",
+                "y": 169
+            },
+            {
+                "x": "helicopter",
+                "y": 1
+            },
+            {
+                "x": "boat",
+                "y": 188
+            },
+            {
+                "x": "train",
+                "y": 210
+            },
+            {
+                "x": "subway",
+                "y": 190
+            },
+            {
+                "x": "bus",
+                "y": 299
+            },
+            {
+                "x": "car",
+                "y": 155
+            },
+            {
+                "x": "moto",
+                "y": 109
+            },
+            {
+                "x": "bicycle",
+                "y": 69
+            },
+            {
+                "x": "horse",
+                "y": 197
+            },
+            {
+                "x": "skateboard",
+                "y": 38
+            },
+            {
+                "x": "others",
+                "y": 180
+            }
+        ]
     },
 ];
 
