@@ -6,7 +6,7 @@ import {tokens} from "../../themes/themes";
 import {mockPieData as data} from "../../data/mockData";
 
 
-function PieChart() {
+function PieChart({ isDashboard = false }) {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
 
