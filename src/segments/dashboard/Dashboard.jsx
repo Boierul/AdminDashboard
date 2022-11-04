@@ -50,7 +50,9 @@ function Dashboard() {
                 gridTemplateColumns="repeat(12, 1fr)"
                 gridAutoRows="140px"
                 gap="20px"
-                paddingBottom="20px"
+                padding="20px"
+                height="75vh"
+                style={{maxHeight: '100%', overflow: 'auto'}}
             >
                 {/* The 1st row of the dashboard*/}
                 <Box
@@ -273,7 +275,7 @@ function Dashboard() {
                     >
                         Sales Quantity
                     </Typography>
-                    <Box height="30vh" width="33vw" paddingRight="20px">
+                    <Box height="80%" width="470px" paddingRight="25px">
                         <BarChart isDashboard={true}/>
                     </Box>
                 </Box>
@@ -291,7 +293,7 @@ function Dashboard() {
                     >
                         Geography Based Traffic
                     </Typography>
-                    <Box height="27.5vh" width="28vw">
+                    <Box height="27.5vh" width="26vw">
                         <GeographyChart isDashboard={true}/>
                     </Box>
                 </Box>

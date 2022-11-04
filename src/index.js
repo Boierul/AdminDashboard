@@ -12,3 +12,9 @@ root.render(
         </BrowserRouter>
     </React.StrictMode>
 );
+
+// TODO LineChart tooltip not showing label
+// TODO Make the app more responsive
+// TODO Get rid of unexpected resize
+// TODO Connect real API to the template
+// TODO Add auth capabilities
