@@ -11,7 +11,7 @@ function Geography() {
     return (
         <Box m="30px">
             <Header title="Geography" subtitle="Simple Geography Chart with dummy data (your API calls could be here)"
-                    color={colors.greenAccent[500]}/>
+                    color={colors.blueAccent[500]}/>
 
             <Box
                 height="70vh"

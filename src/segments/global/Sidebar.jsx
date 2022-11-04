@@ -63,7 +63,7 @@ const Sidebar = () => {
             }}
         >
             {/* Implementation of the sidebar lib */}
-            <ProSidebar collapsed={isCollapsed}>
+            <ProSidebar collapsed={isCollapsed} >
                 <Menu iconShape="circle">
                     <MenuItem
                         onClick={() => setIsCollapsed(!isCollapsed)}
